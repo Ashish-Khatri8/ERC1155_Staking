@@ -6,6 +6,12 @@ async function main() {
     const blazeToken = await BlazeToken.deploy("BlazeK", "BLZ");
     await blazeToken.deployed();
     console.log("BlazeToken is deployed at: ", blazeToken.address);
+
+    // Deploy ERC1155 NFT contract.
+    const NFT = await ethers.getContractFactory("NFT");
+    const nft = await NFT.deploy("");
+    await nft.deployed();
+    console.log("NFT contract deployed at: ",  nft.address);
 }
 
 main()
