@@ -12,6 +12,15 @@ async function main() {
     const nft = await NFT.deploy("");
     await nft.deployed();
     console.log("NFT contract deployed at: ",  nft.address);
+
+    // Deploy the Staking contract.
+    const Staking = await ethers.getContractFactory("Staking");
+    const staking = await Staking.deploy(
+        blazeToken.address,
+        nft.address
+    );
+    await staking.deployed();
+    console.log("Staking contract is deployed at: ", staking.address);
 }
 
 main()
