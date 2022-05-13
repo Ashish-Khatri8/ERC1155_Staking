@@ -4,7 +4,9 @@
 
 - Contract deployed on [rinkeby test network](https://rinkeby.etherscan.io/address/0x0dC599c076333A0e40BE2495d16257544266b718) at:
 
-> 0x0dC599c076333A0e40BE2495d16257544266b718
+```script
+0x0dC599c076333A0e40BE2495d16257544266b718
+```
 
 This contract deploys an ERC20 token with the following details.
 
@@ -21,7 +23,9 @@ It takes the address and the amount of tokens to mint as arguments (must be pass
 
 - Contract deployed on [rinkeby test network](https://rinkeby.etherscan.io/address/0xEfD0556aA6aFfD322b04943a730e823345DaA7e5) at:
 
-> 0xEfD0556aA6aFfD322b04943a730e823345DaA7e5
+```script
+0xEfD0556aA6aFfD322b04943a730e823345DaA7e5
+```
 
 - An ERC1155 token contract that could be used to mint and burn your own NFTs.
 
@@ -33,11 +37,13 @@ It takes the address and the amount of tokens to mint as arguments (must be pass
 - Users can call the burnNFT() function to burn their NFTs.
   It takes the tokenId and the amount of tokens to burn as arguments.
 
-## Staking.sol
+## Contract: Staking.sol
 
 - Contract deployed on [rinkeby test network](https://rinkeby.etherscan.io/address/0x3Ae67a2a0BE55931A549a54657E6A8473F1bFD86) at:
 
-> 0x3Ae67a2a0BE55931A549a54657E6A8473F1bFD86
+```script
+0x3Ae67a2a0BE55931A549a54657E6A8473F1bFD86
+```
 
 - A staking contract where users can stake their minted ERC1155 tokens in order to get BlazeToken(ERC20 token) as staking reward.
 
